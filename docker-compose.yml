@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  reviewlens:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: reviewlens_app
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - HOST=0.0.0.0
+      - AI_PROVIDER=${AI_PROVIDER:-gemini}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-1.5-flash}
+      - GROQ_API_KEY=${GROQ_API_KEY:-}
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
+      - CACHE_DB_PATH=/app/backend/data/cache.db
+    volumes:
+      # Persist SQLite cache across container restarts
+      - ./backend/data:/app/backend/data
+    restart: unless-stopped

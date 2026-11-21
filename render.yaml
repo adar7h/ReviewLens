@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: reviewlens
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: AI_PROVIDER
+        value: gemini
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-1.5-flash
