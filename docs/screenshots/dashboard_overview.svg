@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .card { fill: #ffffff; stroke: #e2e8f0; stroke-width: 1.5; rx: 16px; }
+      .bar-bg { fill: #0f172a; rx: 12px; }
+      .title { font-family: system-ui, -apple-system, sans-serif; font-size: 20px; font-weight: 800; fill: #0f172a; }
+      .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #64748b; }
+      .header-text { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; font-weight: 700; fill: #64748b; text-transform: uppercase; letter-spacing: 0.05em; }
+      .stat-val { font-family: system-ui, -apple-system, sans-serif; font-size: 28px; font-weight: 800; fill: #0f172a; }
+      .stat-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; fill: #64748b; }
+      .quote { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-style: italic; fill: #475569; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" class="bg"/>
+
+  <!-- Top Navbar -->
+  <rect width="1200" height="64" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="32" y="14" width="36" height="36" rx="10" fill="#0284c7"/>
+  <circle cx="50" cy="32" r="8" fill="#ffffff" opacity="0.9"/>
+  <text x="80" y="34" class="title" font-size="18">ReviewLens</text>
+  <rect x="200" y="22" width="140" height="20" rx="10" fill="#e0f2fe"/>
+  <text x="210" y="36" font-family="system-ui" font-size="10" font-weight="700" fill="#0369a1">AI REVIEW INSIGHTS</text>
+
+  <rect x="940" y="18" width="110" height="28" rx="8" fill="#f1f5f9"/>
+  <circle cx="955" cy="32" r="4" fill="#10b981"/>
+  <text x="965" y="36" font-family="system-ui" font-size="11" font-weight="600" fill="#334155">AI: ACTIVE</text>
+
+  <rect x="1060" y="18" width="108" height="28" rx="8" fill="#0284c7"/>
+  <text x="1076" y="36" font-family="system-ui" font-size="11" font-weight="700" fill="#ffffff">Sample Loaded</text>
+
+  <!-- Telemetry Bar -->
+  <rect x="32" y="84" width="1136" height="48" class="bar-bg"/>
+  <text x="56" y="113" font-family="system-ui" font-size="13" font-weight="600" fill="#94a3b8">SQLite Cache: <tspan fill="#ffffff" font-weight="700">12 Served from Cache</tspan>  |  Live AI Batches: <tspan fill="#38bdf8" font-weight="700">4 Batch Calls</tspan></text>
+  <text x="820" y="113" font-family="system-ui" font-size="13" font-weight="600" fill="#94a3b8">Processing Time: <tspan fill="#4ade80" font-weight="700">0.015s</tspan>  |  Est Cost: <tspan fill="#fcd34d" font-weight="700">$0.0010</tspan></text>
+
+  <!-- 4 Summary Cards -->
+  <!-- Card 1 -->
+  <rect x="32" y="148" width="266" height="130" class="card"/>
+  <text x="52" y="176" class="header-text">Total Analysed</text>
+  <text x="52" y="218" class="stat-val">29 <tspan font-size="14" font-weight="500" fill="#64748b">/ 30 in CSV</tspan></text>
+  <rect x="52" y="234" width="100" height="20" rx="4" fill="#f1f5f9"/>
+  <text x="58" y="248" font-family="system-ui" font-size="10" fill="#475569">1 empty skipped</text>
+  <rect x="158" y="234" width="80" height="20" rx="4" fill="#f1f5f9"/>
+  <text x="164" y="248" font-family="system-ui" font-size="10" fill="#475569">1 duplicate</text>
+
+  <!-- Card 2 -->
+  <rect x="322" y="148" width="266" height="130" class="card"/>
+  <text x="342" y="176" class="header-text">Sentiment Split</text>
+  <text x="342" y="218" class="stat-val" font-size="22"><tspan fill="#10b981">41.4%</tspan> <tspan font-size="16" fill="#64748b">17.2%</tspan> <tspan fill="#ef4444">41.4%</tspan></text>
+  <!-- Bar -->
+  <rect x="342" y="232" width="95" height="10" rx="4" fill="#10b981"/>
+  <rect x="440" y="232" width="40" height="10" rx="4" fill="#f59e0b"/>
+  <rect x="483" y="232" width="85" height="10" rx="4" fill="#ef4444"/>
+  <text x="342" y="258" font-family="system-ui" font-size="10" fill="#64748b">● Positive (12)  ● Neutral (5)  ● Negative (12)</text>
+
+  <!-- Card 3 -->
+  <rect x="612" y="148" width="266" height="130" class="card"/>
+  <text x="632" y="176" class="header-text">Needs Store Reply</text>
+  <text x="632" y="218" class="stat-val" fill="#ef4444">13 <tspan font-size="13" font-weight="500" fill="#ef4444">unresolved issues</tspan></text>
+  <text x="632" y="246" class="stat-sub">Broken items, wrong sizes, late shipping</text>
+
+  <!-- Card 4 -->
+  <rect x="902" y="148" width="266" height="130" class="card"/>
+  <text x="922" y="176" class="header-text">Rating Agreement (Bonus)</text>
+  <text x="922" y="218" class="stat-val" fill="#6366f1">88.5% <tspan font-size="13" font-weight="500" fill="#6366f1">star/AI match</tspan></text>
+  <text x="922" y="246" class="stat-sub">Flagged R008 (5 stars with "Terrible" text)</text>
+
+  <!-- Top 3 Praises vs Top 3 Complaints -->
+  <!-- Praises Column -->
+  <rect x="32" y="300" width="556" height="360" class="card"/>
+  <rect x="52" y="320" width="24" height="24" rx="6" fill="#d1fae5"/>
+  <text x="86" y="337" font-family="system-ui" font-size="14" font-weight="700" fill="#0f172a">Top 3 Customer Praises</text>
+
+  <rect x="52" y="360" width="516" height="76" rx="12" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="72" y="385" font-family="system-ui" font-size="12" font-weight="700" fill="#15803d">#1 QUALITY</text>
+  <rect x="150" y="372" width="75" height="18" rx="9" fill="#bbf7d0"/>
+  <text x="158" y="385" font-family="system-ui" font-size="10" font-weight="700" fill="#166534">11 mentions</text>
+  <text x="72" y="412" class="quote">"Super soft fabric, colours did not fade after 3 washes. Worth the price."</text>
+
+  <rect x="52" y="450" width="516" height="76" rx="12" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="72" y="475" font-family="system-ui" font-size="12" font-weight="700" fill="#15803d">#2 DELIVERY</text>
+  <rect x="155" y="462" width="70" height="18" rx="9" fill="#bbf7d0"/>
+  <text x="163" y="475" font-family="system-ui" font-size="10" font-weight="700" fill="#166534">2 mentions</text>
+  <text x="72" y="502" class="quote">"Bass is solid, fit is comfortable, delivery was next day. Very happy!"</text>
+
+  <rect x="52" y="540" width="516" height="76" rx="12" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="72" y="565" font-family="system-ui" font-size="12" font-weight="700" fill="#15803d">#3 PRICE</text>
+  <rect x="135" y="552" width="70" height="18" rx="9" fill="#bbf7d0"/>
+  <text x="143" y="565" font-family="system-ui" font-size="10" font-weight="700" fill="#166534">1 mentions</text>
+  <text x="72" y="592" class="quote">"Sound quality is great for this price. Battery lasts around 5 hours."</text>
+
+  <!-- Complaints Column -->
+  <rect x="612" y="300" width="556" height="360" class="card"/>
+  <rect x="632" y="320" width="24" height="24" rx="6" fill="#ffe4e6"/>
+  <text x="666" y="337" font-family="system-ui" font-size="14" font-weight="700" fill="#0f172a">Top 3 Customer Complaints</text>
+
+  <rect x="632" y="360" width="516" height="76" rx="12" fill="#fff1f2" stroke="#fecdd3" stroke-width="1"/>
+  <text x="652" y="385" font-family="system-ui" font-size="12" font-weight="700" fill="#be123c">#1 QUALITY</text>
+  <rect x="730" y="372" width="75" height="18" rx="9" fill="#fecdd3"/>
+  <text x="738" y="385" font-family="system-ui" font-size="10" font-weight="700" fill="#9f1239">6 complaints</text>
+  <text x="652" y="412" class="quote">"One mug arrived broken. Customer support took 6 days to reply."</text>
+
+  <rect x="632" y="450" width="516" height="76" rx="12" fill="#fff1f2" stroke="#fecdd3" stroke-width="1"/>
+  <text x="652" y="475" font-family="system-ui" font-size="12" font-weight="700" fill="#be123c">#2 DELIVERY</text>
+  <rect x="735" y="462" width="75" height="18" rx="9" fill="#fecdd3"/>
+  <text x="743" y="475" font-family="system-ui" font-size="10" font-weight="700" fill="#9f1239">3 complaints</text>
+  <text x="652" y="502" class="quote">"Delivered in just 3 weeks. Amazing speed. Really impressed 🙄"</text>
+
+  <rect x="632" y="540" width="516" height="76" rx="12" fill="#fff1f2" stroke="#fecdd3" stroke-width="1"/>
+  <text x="652" y="565" font-family="system-ui" font-size="12" font-weight="700" fill="#be123c">#3 SUPPORT</text>
+  <rect x="735" y="552" width="75" height="18" rx="9" fill="#fecdd3"/>
+  <text x="743" y="565" font-family="system-ui" font-size="10" font-weight="700" fill="#9f1239">2 complaints</text>
+  <text x="652" y="592" class="quote">"Raised a ticket 5 days ago, no response yet."</text>
+</svg>

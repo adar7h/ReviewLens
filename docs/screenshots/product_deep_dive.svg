@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .card { fill: #ffffff; stroke: #e2e8f0; stroke-width: 1.5; rx: 16px; }
+      .p-title { font-family: system-ui, -apple-system, sans-serif; font-size: 16px; font-weight: 700; fill: #0f172a; }
+      .p-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; fill: #64748b; }
+      .metric-lbl { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; font-weight: 700; fill: #475569; text-transform: uppercase; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="650" class="bg"/>
+
+  <!-- Top Tab Bar -->
+  <rect x="32" y="24" width="1136" height="50" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="56" y="54" font-family="system-ui" font-size="13" font-weight="600" fill="#64748b">All Reviews Table (29)</text>
+  <rect x="230" y="32" width="230" height="34" rx="8" fill="#e0f2fe"/>
+  <text x="246" y="54" font-family="system-ui" font-size="13" font-weight="700" fill="#0369a1">📊 Product Deep Dive (Bonus View)</text>
+
+  <!-- Product Grid: 4 Product Cards -->
+  <!-- Product 1: Wireless Earbuds X2 -->
+  <rect x="32" y="94" width="556" height="250" class="card"/>
+  <text x="56" y="128" class="p-title">Wireless Earbuds X2</text>
+  <text x="56" y="146" class="p-sub">7 Total Reviews</text>
+  <rect x="440" y="112" width="124" height="26" rx="13" fill="#ffe4e6"/>
+  <text x="456" y="129" font-family="system-ui" font-size="11" font-weight="700" fill="#e11d48">4 Needs Reply</text>
+
+  <text x="56" y="180" class="metric-lbl">Sentiment Split: 29% Pos / 29% Neu / 43% Neg</text>
+  <rect x="56" y="192" width="128" height="12" rx="4" fill="#10b981"/>
+  <rect x="188" y="192" width="128" height="12" rx="4" fill="#f59e0b"/>
+  <rect x="320" y="192" width="188" height="12" rx="4" fill="#ef4444"/>
+
+  <text x="56" y="234" class="metric-lbl">Top Issues & Topics:</text>
+  <rect x="56" y="246" width="90" height="24" rx="6" fill="#f1f5f9"/>
+  <text x="66" y="262" font-family="system-ui" font-size="11" font-weight="600" fill="#334155">quality (5)</text>
+  <rect x="156" y="246" width="90" height="24" rx="6" fill="#f1f5f9"/>
+  <text x="166" y="262" font-family="system-ui" font-size="11" font-weight="600" fill="#334155">support (1)</text>
+  <rect x="256" y="246" width="90" height="24" rx="6" fill="#f1f5f9"/>
+  <text x="266" y="262" font-family="system-ui" font-size="11" font-weight="600" fill="#334155">delivery (1)</text>
+
+  <rect x="56" y="286" width="508" height="38" rx="8" fill="#fffbeb" stroke="#fde68a"/>
+  <text x="70" y="310" font-family="system-ui" font-size="11" font-weight="600" fill="#b45309">⚠️ Critical: Left earbud failure after 2 days & mic call connection drop.</text>
+
+  <!-- Product 2: Ceramic Coffee Mug (Set of 2) -->
+  <rect x="612" y="94" width="556" height="250" class="card"/>
+  <text x="636" y="128" class="p-title">Ceramic Coffee Mug (Set of 2)</text>
+  <text x="636" y="146" class="p-sub">6 Total Reviews</text>
+  <rect x="1020" y="112" width="124" height="26" rx="13" fill="#ffe4e6"/>
+  <text x="1036" y="129" font-family="system-ui" font-size="11" font-weight="700" fill="#e11d48">2 Needs Reply</text>
+
+  <text x="636" y="180" class="metric-lbl">Sentiment Split: 50% Pos / 17% Neu / 33% Neg</text>
+  <rect x="636" y="192" width="220" height="12" rx="4" fill="#10b981"/>
+  <rect x="860" y="192" width="75" height="12" rx="4" fill="#f59e0b"/>
+  <rect x="939" y="192" width="145" height="12" rx="4" fill="#ef4444"/>
+
+  <text x="636" y="234" class="metric-lbl">Top Issues & Topics:</text>
+  <rect x="636" y="246" width="90" height="24" rx="6" fill="#f1f5f9"/>
+  <text x="646" y="262" font-family="system-ui" font-size="11" font-weight="600" fill="#334155">quality (4)</text>
+  <rect x="736" y="246" width="90" height="24" rx="6" fill="#f1f5f9"/>
+  <text x="746" y="262" font-family="system-ui" font-size="11" font-weight="600" fill="#334155">support (1)</text>
+  <rect x="836" y="246" width="80" height="24" rx="6" fill="#f1f5f9"/>
+  <text x="846" y="262" font-family="system-ui" font-size="11" font-weight="600" fill="#334155">price (1)</text>
+
+  <rect x="636" y="286" width="508" height="38" rx="8" fill="#fffbeb" stroke="#fde68a"/>
+  <text x="650" y="310" font-family="system-ui" font-size="11" font-weight="600" fill="#b45309">⚠️ 1 Rating Mismatch flagged (R008 handle detached rated 5 stars).</text>
+
+  <!-- Product 3: Running Shoes Pro -->
+  <rect x="32" y="364" width="556" height="250" class="card"/>
+  <text x="56" y="398" class="p-title">Running Shoes Pro</text>
+  <text x="56" y="416" class="p-sub">6 Total Reviews</text>
+  <rect x="440" y="382" width="124" height="26" rx="13" fill="#ffe4e6"/>
+  <text x="456" y="399" font-family="system-ui" font-size="11" font-weight="700" fill="#e11d48">3 Needs Reply</text>
+
+  <text x="56" y="450" class="metric-lbl">Sentiment Split: 50% Pos / 17% Neu / 33% Neg</text>
+  <rect x="56" y="462" width="220" height="12" rx="4" fill="#10b981"/>
+  <rect x="280" y="462" width="75" height="12" rx="4" fill="#f59e0b"/>
+  <rect x="359" y="462" width="145" height="12" rx="4" fill="#ef4444"/>
+
+  <text x="56" y="504" class="metric-lbl">Top Issues & Topics:</text>
+  <rect x="56" y="516" width="90" height="24" rx="6" fill="#f1f5f9"/>
+  <text x="66" y="532" font-family="system-ui" font-size="11" font-weight="600" fill="#334155">quality (3)</text>
+  <rect x="156" y="516" width="90" height="24" rx="6" fill="#f1f5f9"/>
+  <text x="166" y="532" font-family="system-ui" font-size="11" font-weight="600" fill="#334155">size_fit (1)</text>
+  <rect x="256" y="516" width="90" height="24" rx="6" fill="#f1f5f9"/>
+  <text x="266" y="532" font-family="system-ui" font-size="11" font-weight="600" fill="#334155">delivery (1)</text>
+
+  <!-- Product 4: Bamboo Desk Organizer -->
+  <rect x="612" y="364" width="556" height="250" class="card"/>
+  <text x="636" y="398" class="p-title">Bamboo Desk Organizer</text>
+  <text x="636" y="416" class="p-sub">5 Total Reviews</text>
+  <rect x="1020" y="382" width="124" height="26" rx="13" fill="#ffe4e6"/>
+  <text x="1036" y="399" font-family="system-ui" font-size="11" font-weight="700" fill="#e11d48">2 Needs Reply</text>
+
+  <text x="636" y="450" class="metric-lbl">Sentiment Split: 60% Pos / 0% Neu / 40% Neg</text>
+  <rect x="636" y="462" width="260" height="12" rx="4" fill="#10b981"/>
+  <rect x="900" y="462" width="170" height="12" rx="4" fill="#ef4444"/>
+
+  <text x="636" y="504" class="metric-lbl">Top Issues & Topics:</text>
+  <rect x="636" y="516" width="90" height="24" rx="6" fill="#f1f5f9"/>
+  <text x="646" y="532" font-family="system-ui" font-size="11" font-weight="600" fill="#334155">quality (3)</text>
+  <rect x="736" y="516" width="90" height="24" rx="6" fill="#f1f5f9"/>
+  <text x="746" y="532" font-family="system-ui" font-size="11" font-weight="600" fill="#334155">size_fit (1)</text>
+  <rect x="836" y="516" width="90" height="24" rx="6" fill="#f1f5f9"/>
+  <text x="846" y="532" font-family="system-ui" font-size="11" font-weight="600" fill="#334155">support (1)</text>
+</svg>
