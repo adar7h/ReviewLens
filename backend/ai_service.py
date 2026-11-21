@@ -159,6 +159,14 @@ class MockLLMProvider:
                     summary="Average product experience degraded by rude delivery courier.",
                     needs_reply=True,
                 )
+            # Emojis only (e.g. R009: 👍👍)
+            elif "👍" in text:
+                analysis = ReviewAnalysis(
+                    sentiment="positive",
+                    topics=["quality"],
+                    summary="Customer gave positive feedback with thumbs up emojis.",
+                    needs_reply=False,
+                )
             # Positive reviews (R001, R006, R014, R017, R024, etc.)
             elif any(w in text_lower for w in ["super soft", "beautiful mugs", "love it", "very happy", "zero blisters", "best shoes"]):
                 analysis = ReviewAnalysis(
@@ -183,10 +191,13 @@ class MockLLMProvider:
                     needs_reply=True,
                 )
             else:
+                fallback_summary = text[:80] + ("..." if len(text) > 80 else "")
+                if len(fallback_summary.strip()) < 3:
+                    fallback_summary = f"Customer review: {text}"
                 analysis = ReviewAnalysis(
                     sentiment="neutral",
                     topics=["other"],
-                    summary=text[:80] + ("..." if len(text) > 80 else ""),
+                    summary=fallback_summary,
                     needs_reply=False,
                 )
             results.append((r.review_id, analysis))
